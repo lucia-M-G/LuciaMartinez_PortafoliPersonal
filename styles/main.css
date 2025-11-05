@@ -560,3 +560,204 @@ body {
     background-color: #27ae60 !important;
     transform: scale(1.05);
 }
+
+/* Estilos específicos para la página DAFO */
+.dafo-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+}
+
+.dafo-intro h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.dafo-intro p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.dafo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.dafo-section {
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    background: var(--light-color);
+}
+
+.dafo-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid;
+    text-align: center;
+}
+
+.dafo-strengths h3 {
+    border-color: #27ae60;
+    color: #27ae60;
+}
+
+.dafo-weaknesses h3 {
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
+
+.dafo-opportunities h3 {
+    border-color: #3498db;
+    color: #3498db;
+}
+
+.dafo-threats h3 {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+.dafo-item {
+    background: white;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.dafo-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.dafo-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.dafo-item p {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.dafo-strengths .dafo-item {
+    border-left-color: #27ae60;
+}
+
+.dafo-weaknesses .dafo-item {
+    border-left-color: #e74c3c;
+}
+
+.dafo-opportunities .dafo-item {
+    border-left-color: #3498db;
+}
+
+.dafo-threats .dafo-item {
+    border-left-color: #f39c12;
+}
+
+/* Estrategias */
+.strategies-section {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--light-color);
+}
+
+.strategies-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.strategies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.strategy-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border-top: 4px solid var(--secondary-color);
+    transition: var(--transition);
+}
+
+.strategy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.strategy-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.strategy-card p {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.strategy-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.strategy-card li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.strategy-card li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dafo-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .dafo-section {
+        padding: 1rem;
+    }
+    
+    .strategies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .strategy-card {
+        padding: 1.5rem;
+    }
+    
+    .dafo-intro {
+        padding: 0 1rem;
+    }
+    
+    .dafo-intro h2 {
+        font-size: 1.6rem;
+    }
+}
