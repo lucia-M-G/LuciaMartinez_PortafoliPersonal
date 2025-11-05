@@ -525,3 +525,38 @@ body {
 .dafo-threats .dafo-item {
     border-left-color: #f39c12;
 }
+
+.copy-email {
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Tooltip para explicar la función */
+.copy-email::before {
+    content: 'Clic per copiar el email';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-color);
+    color: white;
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.copy-email:hover::before {
+    opacity: 1;
+}
+
+/* Estilo cuando se copia correctamente */
+.copy-email.copied {
+    background-color: #27ae60 !important;
+    transform: scale(1.05);
+}
