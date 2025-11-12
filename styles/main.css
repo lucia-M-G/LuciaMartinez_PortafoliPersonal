@@ -6,15 +6,15 @@
 }
 
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
-    --text-light: #7f8c8d;
+    --primary-color: #A8D5BA;     /* Verde menta pastel */
+    --secondary-color: #F9CBCB;   /* Rosa pastel */
+    --accent-color: #FFD8A8;      /* Melocotón pastel */
+    --light-color: #F8F9FA;       /* Blanco roto */
+    --dark-color: #6D6875;        /* Gris lavanda oscuro */
+    --text-color: #4A4A4A;        /* Gris oscuro suave */
+    --text-light: #8E8E8E;        /* Gris medio */
     --border-radius: 8px;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
 }
 
@@ -105,8 +105,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);  /* Texto oscuro en lugar de blanco */
     padding: 4rem 0;
 }
 
@@ -340,8 +340,8 @@ body {
 
 /* Page specific styles */
 .page-header {
-    background: linear-gradient(135deg, var(--secondary-color), #2980b9);
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--text-color);  /* Texto oscuro */
     padding: 3rem 0;
     text-align: center;
 }
@@ -652,8 +652,8 @@ body {
 }
 
 .reflection-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);  /* Texto oscuro */
     padding: 2rem;
     display: flex;
     align-items: center;
