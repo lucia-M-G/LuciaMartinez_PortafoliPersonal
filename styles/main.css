@@ -456,46 +456,44 @@ body {
 }
 
 /* Estilos para Video CV */
-.video-container {
+.video-hero {
     display: flex;
     justify-content: center;
     margin: 3rem 0;
 }
 
-.video-placeholder {
+.video-container-minimal {
     width: 100%;
     max-width: 800px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: var(--border-radius);
-    padding: 3rem;
     text-align: center;
-    color: white;
+}
+
+.video-frame {
+    border-radius: var(--border-radius);
+    overflow: hidden;
     box-shadow: var(--box-shadow);
+    margin-bottom: 1.5rem;
 }
 
-.video-icon {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+/* ESTILOS PARA VIDEO LOCAL */
+.video-frame video {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: block;
 }
 
-.video-placeholder h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.video-caption h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
 }
 
-.video-info {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.info-item {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
+.video-caption p {
+    color: var(--text-light);
+    font-style: italic;
+    font-size: 1.1rem;
 }
 
 .upload-steps {
@@ -529,45 +527,6 @@ body {
     justify-content: center;
     margin: 0 auto 1rem;
     font-weight: bold;
-}
-
-/* ======== AÑADE LOS NUEVOS ESTILOS DEL VIDEO AQUÍ ======== */
-.video-hero {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0;
-}
-
-.video-container-minimal {
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-}
-
-.video-frame {
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    margin-bottom: 1.5rem;
-}
-
-.video-frame iframe {
-    width: 100%;
-    height: 450px;
-    display: block;
-    border: none;
-}
-
-.video-caption h3 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-}
-
-.video-caption p {
-    color: var(--text-light);
-    font-style: italic;
-    font-size: 1.1rem;
 }
 
 /* Estilos para Práctiques */
@@ -929,7 +888,7 @@ body {
     font-weight: bold;
 }
 
-/* Menú móvil - ACTUALIZADO */
+/* Menú móvil */
 @media (max-width: 768px) {
     .nav {
         display: none;
